@@ -1,1 +1,5 @@
-# Sonic-CD-Gems-PS2-dwarf2cpp-Dumps
+# Sonic CD Gems Collection PS2 dwarf2cpp Dumps
+Using [dwarf2cpp](https://github.com/seilweiss/dwarf2cpp), I was able to get skeleton pseudo C files generated for every ELF file in the Gems Collection version of Sonic CD. The folder structure is exactly how it was set up in the original source code, and each file generated contains variable names, function prototypes and the local variables used, and structures. While no code is actually decompiled, this should be a good base to work off of for one.
+
+## How is this possible?
+It seems that the Gems Collection version of Sonic CD was shipped as a debug build, seeing as all the debugging info in it is still intact in every ELF file. This includes symbol names, function prototypes, structures, and also file names, which is what you can see in this repository.
